@@ -17,7 +17,7 @@ const LandingPage = () => {
                 <p className="font-[Inter] text-base sm:text-lg font-medium text-gray-300 w-full md:w-8/12 lg:w-6/12 mt-8 sm:mt-12 mb-12 sm:mb-16 mx-auto sm:mx-0">Gain deep insights into your shop's performance with powerful analytics and an intuitive dashboard. Track sales trends, monitor profits, and understand customer behavior to make data-driven decisions.</p>
             </div>
             <div className="flex justify-center px-4">
-                <img className="border-2 border-amber-50 rounded-xl w-11/12 md:w-10/12 lg:w-9/12 max-w-full h-auto shadow-2xl" src="https://joincobalt.com/_next/image?url=%2F_static%2Fdashboard.png&w=828&q=75" alt="Dashboard Preview"></img>
+                <img className="border-2 border-amber-50 rounded-xl w-11/12 md:w-10/12 lg:w-9/12 max-w-full h-auto shadow-2xl" src="https://i.postimg.cc/CYByx6Lf/image.png" alt="Dashboard Preview"></img>
             </div>
             <div className="mt-24 sm:mt-32 space-y-16 sm:space-y-20 px-4 sm:px-8">
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
