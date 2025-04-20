@@ -46,7 +46,7 @@ const LandingPage = () => {
                 </div>
             </div>
             <div className="flex justify-center mt-16 sm:mt-20">
-                <Link to="/dashboard" className="text-white font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-3.5 text-center mb-2">Get Started with Shoppr</Link>
+                <Link to="/register" className="text-white font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-3.5 text-center mb-2">Get Started with Shoppr</Link>
             </div>
             <div className="flex justify-center mt-16 sm:mt-20 pb-8">
                 <div className="w-11/12 md:w-10/12 border-t border-gray-600 text-center sm:text-left">
