@@ -1,0 +1,29 @@
+admin: {
+    user_id: String,
+    name: String,
+    email: String,
+    phone: String,
+    password: String,
+    city: String,
+    branch: String,
+    GSTIN: String,
+}
+
+product: {
+    product_id: String,
+    shop_id: shop.id,
+    product_name: String,
+    product_price: String,
+    cloudinary_id: String, //optional
+    product_quantity: Number,
+}
+
+transaction: {
+    transaction_id: String,
+    customer_contact: Number,
+    customer_name: String,
+    cart_items: Array of {product_id, quantity},
+    extra_charges: Array of {Charge Title, Amount},
+    billing_mode: String(online/cash/card)
+    // discounts later
+}
