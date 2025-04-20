@@ -21,6 +21,7 @@
   "scripts": {
     "build": "parcel build ./src/index.html",
     "start": "parcel ./src/index.html",
+    "build:verbose": "npm run build --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
