@@ -38,7 +38,7 @@ const Register = () => {
         setLoading(true);
 
         try {
-            const registerResponse = await fetch("http://localhost:4000/api/admin/register", {
+            const registerResponse = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/admin/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const Register = () => {
                 throw new Error(registerData.message || "Registration failed");
             }
 
-            const loginResponse = await fetch("http://localhost:4000/api/admin/login", {
+            const loginResponse = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/admin/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

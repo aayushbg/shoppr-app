@@ -37,7 +37,7 @@ const Profile = () => {
              return;
         }
         try {
-            const response = await fetch('http://localhost:4000/api/admin/profile', {
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/admin/profile`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -139,7 +139,7 @@ const Profile = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:4000/api/admin/profile', { 
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/admin/profile`, { 
                 method: 'PUT', 
                 headers: {
                     'Content-Type': 'application/json',

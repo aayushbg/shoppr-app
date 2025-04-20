@@ -39,7 +39,7 @@ const Transactions = () => {
             return;
         }
         try {
-            const response = await fetch('http://localhost:4000/api/transactions', {
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/transactions`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -131,7 +131,7 @@ const Transactions = () => {
                 return;
             }
             try {
-                const response = await fetch(`http://localhost:4000/api/transactions/${id}`, {
+                const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/transactions/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`

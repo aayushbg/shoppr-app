@@ -40,7 +40,7 @@ const Accounts = () => {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch('http://localhost:4000/api/transactions', {
+                const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/transactions`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

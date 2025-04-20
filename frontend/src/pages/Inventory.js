@@ -91,7 +91,8 @@ const Inventory = () => {
              return;
         }
         try {
-            const response = await fetch('http://localhost:4000/api/products', {
+            // Use environment variable for base URL
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/products`, {
                 headers: {
                     'Authorization': `Bearer ${token}` // Use token from context
                 }
@@ -192,9 +193,10 @@ const Inventory = () => {
         }
 
         const method = selectedProduct ? 'PUT' : 'POST';
+        // Use environment variable for base URL
         const url = selectedProduct
-            ? `http://localhost:4000/api/products/${selectedProduct._id}`
-            : 'http://localhost:4000/api/products';
+            ? `${process.env.REACT_APP_API_BASE_URL}/api/products/${selectedProduct._id}`
+            : `${process.env.REACT_APP_API_BASE_URL}/api/products`;
         
         const productData = {
             ...formData,
@@ -253,7 +255,8 @@ const Inventory = () => {
                  return;
             }
             try {
-                const response = await fetch(`http://localhost:4000/api/products/${id}`, {
+                // Use environment variable for base URL
+                const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/products/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}` // Use token from context

@@ -20,9 +20,8 @@ export const AuthProvider = ({ children }) => {
         setLoading(true);
         setAuthError(null);
         try {
-            // --- Replace with your actual endpoint to get user details --- 
-            // Example: Fetching user profile using the token
-            const response = await fetch('http://localhost:4000/api/admin/profile', { // ADJUST ENDPOINT IF NEEDED
+            // Use environment variable for base URL
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/admin/profile`, { // ADJUST ENDPOINT IF NEEDED
                 headers: {
                     'Authorization': `Bearer ${currentToken}`
                 }
