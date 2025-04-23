@@ -1,5 +1,4 @@
-\
-# Shoppr - Full-Stack POS & Inventory Management Application
+# Shoppr
 
 > A comprehensive Point-of-Sale (POS) and inventory management system built with the MERN stack (MongoDB, Express, React, Node.js) and styled with Tailwind CSS.
 
