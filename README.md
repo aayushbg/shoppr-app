@@ -1,7 +1,6 @@
 # Shoppr
 
-> A comprehensive Point-of-Sale (POS) and inventory management system built with the MERN stack (MongoDB, Express, React, Node.js) and styled with Tailwind CSS.
-
+Live Link: https://join-shoppr.vercel.app/
 <!-- Optional: Add a screenshot or GIF demo here -->
 <!-- ![Shoppr Dashboard Demo](link-to-your-screenshot.png) -->
 
@@ -61,8 +60,8 @@ Shoppr is a web application designed to help businesses manage their inventory, 
 *   **React Context API:** For global state management (e.g., Authentication, Theme).
 *   **Chart.js & react-chartjs-2:** For data visualization (Line and Doughnut charts).
 *   **React Icons:** For UI icons.
-*   **Axios/Fetch API:** For making HTTP requests to the backend.
-*   **(Build Tool):** Likely Create React App (`react-scripts`) or Parcel.
+*   **Fetch API:** For making HTTP requests to the backend.
+*   **(Build Tool):** Parcel.
 
 ### Backend
 
@@ -124,7 +123,6 @@ Follow these instructions to set up and run the project locally.
 1.  **Clone the repository:**
     ```bash
     git clone <your-repository-url>
-    cd FullStack
     ```
 
 2.  **Install Backend Dependencies:**
@@ -196,13 +194,4 @@ The backend provides the following main API routes:
 *   `/api/transactions`: (GET, POST) Get all transactions or create a new transaction (bill).
 *   `/api/transactions/:id`: (GET, DELETE) Get or delete a specific transaction.
 
-*(Note: Routes are protected by JWT authentication where appropriate).*
-
-## Deployment
-
-*   **Frontend:** Designed for deployment on platforms like Vercel or Netlify. Remember to set the `REACT_APP_API_BASE_URL` environment variable in the deployment platform's settings to point to your *deployed* backend URL. If build fails due to memory (SIGSEGV), set the `NODE_OPTIONS` environment variable to `--max-old-space-size=4096` (or higher if needed) in the platform settings.
-*   **Backend:** Can be deployed on platforms like Render, Heroku, or any Node.js hosting service. Ensure the `PORT`, `MONGO_URI`, and `JWT_SECRET` environment variables are set correctly on the deployment platform.
-
----
-
-*Feel free to add more sections like Contributing Guidelines, License, or detailed API documentation.*
+*(Note: Routes are protected by JWT authentication).*
